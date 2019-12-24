@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Key Code Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Key Code Finder</h1>
+            <p>Discover keycode by pressing a key</p>
+        </div>
+
+        <div class="output">
+            <div>
+                <h2 id="key-code"></h2>
+            </div>
+            <div>
+                <h2 id="key"></h2>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script to display key and keycode -->
+    <script>
+        window.addEventListener('keydown', function (e) {
+            console.log(document.getElementById('key-code').innerHTML = e.keyCode);
+        });
+
+        window.addEventListener('keydown', function (e) {
+            console.log(document.getElementById('key').innerHTML = e.key.toUpperCase());
+        });
+    </script>
+
+</body>
+
+</html>
